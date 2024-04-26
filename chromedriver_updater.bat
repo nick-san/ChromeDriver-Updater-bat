@@ -1,6 +1,6 @@
 @echo off
 @rem find Chrome Version
-FOR /F %%i in ('dir /B /O-N "C:\Users\yuki\AppData\Local\Google\Chrome\Application" ^| findstr "^[0-9].*\>"') do set chrome_version=%%i
+FOR /F %%i in ('dir /B /O-N "%USERPROFILE%\Appdata\Local\Google\Chrome\Application" ^| findstr "^[0-9].*\>"') do set chrome_version=%%i
 
 setlocal
 
